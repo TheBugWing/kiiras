@@ -35,6 +35,8 @@
 //OF YOUR EMAILS LISTED AND DO THE VOTING
 //GOOD LUCK!!
 
+//PS/IF YOU ARE SCARED OF YOUR EMAILS AND PASSWORDS BEING EYED ON THE SCRIPTS ARE LITERALLY OPEN BELOW FOR YOU TO INSPECT
+//OR YOU CAN COPY AND PASTE IT TO CHATGPT OR ANY OTHER AI TOOLS AND ASK THEM IF THERE ANY SUSPICIOUS LINES IN THIS SCRIPT
 
 //Here is the emails and passwords
 let ems = [
@@ -249,7 +251,7 @@ let ems = [
 		}, g3i)
 	}
 	let url = window.location.href
-	console.log(url)
+	//console.log(url)
 	let p1 = /muniverse.io\/titlehome/
 	let p2 = /oauth2\/v2/
 	let p3 = /v3\/signin/
@@ -264,7 +266,7 @@ let ems = [
 			let nlog = await GM.getValue("log")
 			if (nlog != clog) {
 				clog = nlog
-				alert("change to " + clog)
+				//alert("change to " + clog)
 				if (clog == 1) f2()
 				else if (clog == 0) {
 					let cind = await GM.getValue("ind")
@@ -281,4 +283,5 @@ let ems = [
 	} else {
 		g3()
 	}
+
 })();
